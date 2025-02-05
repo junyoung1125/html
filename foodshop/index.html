@@ -185,17 +185,19 @@
         box-sizing: border-box;
     }
 
+    main > .go > article > .banner{
+        position: relative;
+        float: left;
+    }
+
+
     main > .go > article > .banner1{
         width: 412px;
         height: 450px;
         background-image: url(./images/main_go_bg1.png);
     }
 
-    main > .go > article > .banner{
-        position: relative;
-        float: left;
-    }
-
+   
     main > .go > article > .banner > a{
         position: absolute;
         left: 26px;
@@ -208,7 +210,7 @@
         color: #ff6312;
     }
 
-    main > .go > article > .banner > a.title{
+    main > .go > article > .banner > a .title{
         font-size: 24px;
         color: #fcfffd;
         margin-top: 10px;
@@ -293,13 +295,67 @@
         overflow: hidden;
     }
 
+    
+
+    main .thumb_rolling > li{
+        float: left;
+        width: 25%;
+        height: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+
+    main .thumb_rolling > li a{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    main .thumb_rolling > li img{
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+    }
+
+    main .thumb_rolling > li h1 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #41392f;
+        margin-top: 12px;
+    }
+
+    main .thumb_rolling > li p{
+        font-size: 13px;
+        font-weight: bold;
+        color: #959595;
+        margin: 12px 0 26px;
+    }
+
+    main > .thumb_rolling > li h2{
+        font-size: 20px;
+        font-weight: bold;
+        color: #ff6a00;
+    }
+
+    main .all{
+        display: block;
+        width: 300px;
+        height: 50px;
+        border: 1px solid #efefef;
+        box-shadow: 0px 2px 2px #999;
+        text-align: center;
+        line-height: 50px;
+        margin: 56px auto 0;
+        color: #626262;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+
     main > .vegetable ul{
         width: 100%;
         height: 312px;
-        border: 1px solid gray;
-        box-sizing: border-box;
-        overflow: hidden;
-        
         
     }
 
@@ -307,15 +363,30 @@
         float: left;
         width: 25%;
         height: 100%;
-        border: 1px solid pink;
-        box-sizing: border-box;
+      
     }
 
-    main >.premium{}
+    main >.premium{
+        background-image: url(/foodshop/images/premium_bg.png);
+        background-size: cover;
+        background-position: 50% center;
+    }
+
+    main > .premium > article{
+        text-align: center;
+    }
+
+    main > .premium > article img {
+        margin-top: 52px;
+    }
 
     main >.seafood{}
 
-    main >.seafood > article{}
+    main >.seafood > article{
+        padding: 60px 0px 40px;
+        box-sizing: border-box;
+        text-align: center;
+    }
 
     main > .seafood ul{
         width: 100%;
@@ -417,15 +488,15 @@
             <div>
                 <article>
                     <a href="#" class="shopping">
-                        <img src="./images/ico_shopping.png" alt="주문조회 바로가기">
+                        <img src="/foodshop/images/ico_shopping.png" alt="주문조회 바로가기">
                         <span>SHOPPING</span>
                         <span>주문조회 바로가기</span>
                     </a>
                     <a href="#" class="logo">
-                        <img src="./images/header_txt_logo.png" alt="식자재전문쇼핑몰">
+                        <img src="/foodshop/images/header_txt_logo.png" alt="식자재전문쇼핑몰">
                     </a>
                     <a href="#" class="oneday_txt">
-                        <img src="./images/header_txt_onday.png" alt="원데이 번개장토">
+                        <img src="/foodshop/images/header_txt_onday.png" alt="원데이 번개장토">
                     </a>
                 </article>
             </div>
@@ -454,7 +525,7 @@
                 <article>
                     <ul>
                         <li>
-                            <img src="./images/slider_banner1.jpg" alt="자연의 신선함!">
+                            <img src="/foodshop/images/slider_banner1.jpg" alt="자연의 신선함!">
                         </li>
                     </ul>
                 </article>
@@ -466,18 +537,18 @@
                     <a href="#">
                         <span class="category">생활야채</span>
                         <p class="title">
-                            "1일 1야채"
+                            1일 1야채
                             <br>
-                            "건강한 생활습관 "
+                            건강한 생활습관 
                             <i>
-                                "아삭아삭 건강에도 좋은"
+                                아삭아삭 건강에도 좋은
                                 <br>
-                                "야채를 1일 1야채로"
+                                야채를 1일 1야채로
                                 <br>
-                                "생활에 활기를 느껴보세요!"
+                                생활에 활기를 느껴보세요!
                             </i>
                         </p>
-                        <img src="./images/main_go_ico.png" alt="1일1야채 건강한 생활습관">
+                        <img src="/foodshop/images/main_go_ico.png" alt="1일1야채 건강한 생활습관">
                     </a>
                    </div>
 
@@ -485,11 +556,11 @@
                     <a href="#">
                         <span class="category">특별이벤트</span>
                         <p class="title dark">
-                            "SHOP에서 진행하는"
+                            SHOP에서 진행하는
                             <br>
-                            "특별이벤트! "
+                            특별이벤트! 
                         </p>
-                        <img src="./images/main_go_ico.png" alt="SHOP에서 진행하는 특별이벤트!">
+                        <img src="/foodshop/images/main_go_ico.png" alt="SHOP에서 진행하는 특별이벤트!">
                     </a>
                    </div>
 
@@ -497,11 +568,11 @@
                     <a href="#">
                         <span class="category">하루할인</span>
                         <p class="title">
-                            "오늘의"
+                            오늘의
                             <br>
-                            "할인상품! "
+                            할인상품! 
                         </p>
-                        <img src="./images/main_go_ico.png" alt="오늘의 할인상품">
+                        <img src="/foodshop/images/main_go_ico.png" alt="오늘의 할인상품">
                     </a>
                    </div>
 
@@ -509,11 +580,11 @@
                     <a href="#">
                         <span class="category">프리미엄</span>
                         <p class="title">
-                            "SHOP에서 인증하는"
+                            SHOP에서 인증하는
                             <br>
-                            "프리미엄 상품"
+                            프리미엄 상품
                         </p>
-                        <img src="./images/main_go_ico.png" alt="SHOP에서 인증하는 프리미엄상품">
+                        <img src="/foodshop/images/main_go_ico.png" alt="SHOP에서 인증하는 프리미엄상품">
                     </a>
                    </div>
 
@@ -521,11 +592,11 @@
                     <a href="#">
                         <span class="category">인기상품</span>
                         <p class="title dark">
-                            "SHOP의"
+                            SHOP의
                             <br>
-                            "인기상품 "
+                            인기상품 
                         </p>
-                        <img src="./images/main_go_ico.png" alt="SHOP의 인기상품">
+                        <img src="/foodshop/images/main_go_ico.png" alt="SHOP의 인기상품">
                     </a>
                    </div>
                 </article>
@@ -534,18 +605,18 @@
             <section class="oneday">
                 <article>
                     <a href="#">
-                        <img src="./images/oneday_txt.png" alt="매일매일 원가제공! 원데이 번개장터">
+                        <img src="/foodshop/images/oneday_txt.png" alt="매일매일 원가제공! 원데이 번개장터">
                     </a>
                 </article>
             </section>
 
             <section class="vegetable">
                 <article>
-                    <img src="./images/vegetable_tit.png" alt="1일1야채로 건강한 생활습관">
-                    <ul class="thumb_rooling">
+                    <img src="/foodshop/images/vegetable_tit.png" alt="1일1야채로 건강한 생활습관">
+                    <ul class="thumb_rolling">
                         <li>
                             <a href="#">
-                                <img src="./images/thumb1.jpg" alt="플레인요거트">
+                                <img src="/foodshop/images/thumb1.jpg" alt="플레인요거트">
                                 <h1>플레인요거트 4개입</h1>
                                 <p>견과류, 과일과 같이 먹는 플레인 요거트</p>
                                 <h2>7,500원</h2>
@@ -553,7 +624,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./images/thumb2.jpg" alt="플레인요거트">
+                                <img src="/foodshop/images/thumb2.jpg" alt="플레인요거트">
                                 <h1>프랑스 더치커피</h1>
                                 <p>프랑스만의 방식으로 내려진 더치커피</p>
                                 <h2>5,000원</h2>
@@ -561,7 +632,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./images/thumb3.jpg" alt="플레인요거트">
+                                <img src="/foodshop/images/thumb3.jpg" alt="플레인요거트">
                                 <h1>로얄밀크 홍차</h1>
                                 <p>일본에서 온 깊고 풍부한맛의 로얄밀크티</p>
                                 <h2>17,000원</h2>
@@ -569,7 +640,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./images/thumb4.jpg" alt="플레인요거트">
+                                <img src="/foodshop/images/thumb4.jpg" alt="플레인요거트">
                                 <h1>스위스 핫초코 320g</h1>
                                 <p>스위스에서 온 핫초코로 따뜻한 연말</p>
                                 <h2>4,000원</h2>
@@ -583,18 +654,18 @@
             <section class="premium">
                 <article>
                     <a href="#">
-                        <img src="./images/main_premium_tit.png" alt="프리미엄 상품소개">
+                        <img src="/foodshop/images/main_premium_tit.png" alt="프리미엄 상품소개">
                     </a>
                 </article>
             </section>
 
             <section class="seafood">
                 <article>
-                    <img src="./images/seafood_tit.png" alt="신선하고 담백한 해산물">
-                    <ul class="thumb_rooling">
+                    <img src="/foodshop/images/seafood_tit.png" alt="신선하고 담백한 해산물">
+                    <ul class="thumb_rolling">
                         <li>
                             <a href="#">
-                                <img src="./images/thumb1.jpg" alt="플레인요거트">
+                                <img src="/foodshop/images/thumb1.jpg" alt="플레인요거트">
                                 <h1>플레인요거트 4개입</h1>
                                 <p>견과류, 과일과 같이 먹는 플레인 요거트</p>
                                 <h2>7,500원</h2>
@@ -603,7 +674,7 @@
 
                         <li>
                             <a href="#">
-                                <img src="./images/thumb2.jpg" alt="플레인요거트">
+                                <img src="/foodshop/images/thumb2.jpg" alt="플레인요거트">
                                 <h1>프랑스 더치커피</h1>
                                 <p>프랑스만의 방식으로 내려진 더치커피</p>
                                 <h2>5,000원</h2>
@@ -612,7 +683,7 @@
 
                         <li>
                             <a href="#">
-                                <img src="./images/thumb3.jpg" alt="플레인요거트">
+                                <img src="/foodshop/images/thumb3.jpg" alt="플레인요거트">
                                 <h1>로얄밀크 홍차</h1>
                                 <p>일본에서 온 깊고 풍부한맛의 로얄밀크티</p>
                                 <h2>17,000원</h2>
@@ -621,7 +692,7 @@
 
                         <li>
                             <a href="#">
-                                <img src="./images/thumb4.jpg" alt="플레인요거트">
+                                <img src="/foodshop/images/thumb4.jpg" alt="플레인요거트">
                                 <h1>스위스 핫초코 320g</h1>
                                 <p>스위스에서 온 핫초코로 따뜻한 연말</p>
                                 <h2>4,000원</h2>
@@ -664,7 +735,7 @@
                         &nbsp;&nbsp;&nbsp;주소 : 부산시 부산진구 서전로 123
                     
                     </p>
-                    <img src="./images/footer_tel.png" class="tel" alt="365 고객센터">
+                    <img src="/foodshop/images/footer_tel.png" class="tel" alt="365 고객센터">
                 </div>
             </div>
         </footer>
